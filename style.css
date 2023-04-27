@@ -17,7 +17,7 @@
 	border-radius: 10px;
 	position: fixed;
 	background: linear-gradient(to top, #D1566F 25%, #BC614C);
-	top: 40vh;
+	bottom: 40vh;
 	left: 10px;
 	box-shadow:  0px 0px 20px #0B0A00;
 }
@@ -205,7 +205,7 @@ ul li label:hover{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
+
 }
 
 .carBen div img{
@@ -265,6 +265,6 @@ ul li label:hover{
 		width: 48vw;
 	}
 	.navBar{
-		top: 60vh;
+		bottom: 20vh;
 	}
 }

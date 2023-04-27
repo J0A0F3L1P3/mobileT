@@ -1,0 +1,270 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	user-select: none;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+/* navBar */
+
+.navBar{
+	border-radius: 10px;
+	position: fixed;
+	background: linear-gradient(to top, #D1566F 25%, #BC614C);
+	top: 40vh;
+	left: 10px;
+	box-shadow:  0px 0px 20px #0B0A00;
+}
+
+.navBar ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+}
+
+.navBar ul li:hover{
+	transform: scale(1.1);
+}
+
+.navBar ul li img{
+	height: 100%;
+	width: 40px;
+	margin: 5px 6px 5px 5px;
+}
+
+/* Tela Inicial */
+
+#inicio{
+	height: 100vh;
+	background-color: #1C1B21;
+	background-image: url("https://cdn-icons-png.flaticon.com/512/7717/7717364.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #FAF9FE;
+	height: 8vh;
+	padding: 0px 20px;
+}
+
+h1{
+	margin-top: -20px;
+}
+
+.T{
+	position: relative;
+	top: 8px;
+	font-size: 50px;
+	color: #D1566F;
+}
+
+.navPer ul{
+	display: flex;
+	list-style: none;
+}
+
+li a{
+	text-decoration: none;
+	color: #FAF9FE;
+}
+
+input{
+	display: none;
+}
+
+ul li label{
+	padding: 10px;
+}
+
+.navComp:checked ~ label{
+	border-bottom: solid 4px #D1566F;
+}
+
+ul li label:hover{
+	cursor: pointer;
+	background-color: #2D2C32;
+}
+
+.contPrin{
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contPrin h1{
+	font-size: 70px;
+	color: #FAF9FE;
+}
+
+.contPrin h2{
+	font-size: 25px;
+	color: #BC614C;
+}
+
+.contPrin div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to right, #D1566F 25%, #BC614C);
+	border-radius: 100px;
+	padding: 5px 20px 5px 5px;
+	margin-top: 50px;
+	box-shadow:  0px 5px 15px #0B0A10;
+}
+
+.contPrin a{
+	text-decoration: none;
+	font-size: 25px;
+	color: #FAF9FE;
+	padding: 5px 30px 5px 20px;
+}
+
+.openPos{
+	/* background-color: white;
+	border-radius: 100px; */
+	height: 25px;
+	width: 25px;
+}
+
+/* Segunda Tela */
+
+#career{
+	/* min-height: 103vh; */
+	padding: 10vh 0vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #222327;
+}
+
+.carText{
+	left: 0px;
+	width: 80vw;
+}
+
+.carText h1{
+	font-size: 40px;
+	color: #65666B;
+}
+
+.carText p{
+	font-size: 20px;
+	color: #65666B;
+}
+
+.MOBILET{
+	color: #FAF9FE;
+}
+
+.hr {
+  background-image: linear-gradient(to right, #D1566F, #BC614C);
+  border: 0;
+	width: 360px;
+  height: 3px;
+}
+
+
+.carPics{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	justify-content: center;
+}
+
+.carPics img, .carBen div{
+	width: 24vw;
+	margin: 0.5vw;
+}
+
+.PerPoss{
+	font-size: 40px;
+	color: #FAF9FE;
+}
+
+.carBen{
+	display: flex;
+}
+
+.carBen div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.carBen div img{
+	height: 100%;
+	width: 10vw;
+}
+
+/* Terceira Tela */
+
+#possib{
+	height: 103vh;
+	background-color: #202125;
+}
+
+/* Fotter */
+
+#fotter{
+	height: 40vh;
+	background-color: #1C1B21;
+}
+
+
+
+#Mobile{
+	display: none;
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	height: 50px;
+	width: 60px;
+	border-radius: 10px;
+}
+
+.menu:hover{
+	background-color: gray;
+}
+
+@media (min-width: 768px) {
+	#Mobile, .menu{
+		display: none;
+	}
+}
+
+
+@media (max-width: 768px) {
+	#Computer{
+		display: none;
+	}
+	.contPrin{
+		margin-bottom: 30vh;
+	}
+	.carPics img{
+		width: 48vw;
+	}
+	.navBar{
+		top: 60vh;
+	}
+}

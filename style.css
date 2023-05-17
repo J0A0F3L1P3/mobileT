@@ -8,10 +8,6 @@
 	/* font-family: 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
-body{
-	
-}
-
 ::-webkit-scrollbar{
 	display: none;
 }
@@ -25,6 +21,7 @@ body{
 	bottom: 30vh;
 	margin: 10px;
 	box-shadow:  0px 0px 20px #0B0A00;
+    z-index: 999;
 }
 
 .navBar ul{
@@ -80,7 +77,7 @@ header h1{
 	list-style: none;
 }
 
-header li a{
+nav li a{
 	text-decoration: none;
 	color: #FAF9FE;
 }
@@ -89,7 +86,7 @@ input{
 	display: none;
 }
 
-header ul li label{
+nav ul li label{
 	padding: 10px;
 }
 
@@ -97,7 +94,7 @@ header ul li label{
 	border-bottom: solid 4px #D1566F;
 }
 
-header ul li label:hover{
+nav ul li label:hover{
 	cursor: pointer;
 	background-color: #2D2C32;
 }
@@ -267,18 +264,13 @@ hr {
 	transition: .5s;
 }
 
-#possib nav{
+#possib ul{
 	width: 89vw;
 	margin-top: 5vh;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-#possib nav ul{
 	list-style: none;
-	display: flex;
 	flex-wrap: wrap;
 }
 
@@ -293,6 +285,7 @@ hr {
 	transition: .5s;
 	transform: scale(1.1);
 	box-shadow:  0px 10px 15px #0B0A10;
+    z-index: 999;
 }
 
 #possib input:checked ~ div{
@@ -380,34 +373,71 @@ footer {
 /* mobile */
 
 #Mobile{
-	display: none;
+    display: none;
+    color: white;
+    position: absolute;
+    height: 275px;
+    width: 125px;
+    right: 25px;
+    top: 15px;
+    background-color: rgba(333, 333, 333, 0.25);
+    padding-top: 40px;
+    overflow: hidden;
+    transition: all .5s;
+    border-radius: 25px;
+}
+
+#Mobile ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 230px;
+    width: 125px;
+}
+
+#Mobile ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#Mobile ul li label{
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .menu{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	height: 50px;
-	width: 60px;
-	border-radius: 10px;
+    display: none;
+	height: 40px;
+	width: 40px;
+    position: absolute;
+    right: 32px;
+    top: 20px;
+    z-index: 999;
 }
 
-.menu:hover{
-	background-color: gray;
-}
-
-/* computador */
-
-@media (min-width: 768px) {
-	#Mobile, .menu{
-		display: none;
-	}
+#menu:checked ~ nav{
+    height: 50px;
+    width: 55px;
+    transition: all .5s;
 }
 
 /* tablet */
 
 @media (max-width: 768px) {
+	#Computer{
+		display: none;
+	}
+    #Mobile{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
 	.carText, .textPic img{
 		width: 75vw;
 		margin: 3vh;
@@ -421,14 +451,14 @@ footer {
 	.carBen div div img{
 		width: 30vw;
 	}
+	footer{
+		flex-direction: column;
+	}
 }
 
 /* celular */
 
 @media (max-width: 443px) {
-	#Computer{
-		display: none;
-	}
 	.contPrin{
 		padding-bottom: 30vh;
 	}
@@ -453,8 +483,5 @@ footer {
 	}
 	.carBen div div img{
 		width: 30vw;
-	}
-	footer{
-		flex-direction: column;
 	}
 }

@@ -5,224 +5,223 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>mobileT</title>
 </head>
 
 <body>
-    <nav class="navBar">
-        <ul>
-            <li><a href="#inicio"><img src="https://cdn-icons-png.flaticon.com/512/748/748015.png" alt="flaticon"></a>
-            </li>
-            <li><a href="#career"><img src="https://cdn-icons-png.flaticon.com/512/7936/7936552.png" alt="flaticon"></a>
-            </li>
-            <li><a href="#possib"><img src="https://cdn-icons-png.flaticon.com/512/1666/1666571.png" alt="flaticon"></a>
-            </li>
-            <li><a href="#fotter"><img src="https://cdn-icons-png.flaticon.com/512/5393/5393011.png" alt="flaticon"></a>
-            </li>
-        </ul>
-    </nav>
-
-    <section id="inicio">
-
-        <input type="checkbox" name="menu" id="menu">
-        <label class="menu" for="menu"><img src="https://cdn-icons-png.flaticon.com/512/3917/3917762.png" height="40px" alt="flaticon"></label>
-
-        <nav class="navPer" id="Mobile">
-            <ul>
-                <li><input type="radio" name="nav" id="nav1" checked><label for="nav1">ABOUT</label></li>
-                <li><input type="radio" name="nav" id="nav2"><label for="nav2">OUR APPS</label></li>
-                <li><input type="radio" name="nav" id="nav3"><label for="nav3">CAREER</label></li>
-                <li><input type="radio" name="nav" id="nav4"><label for="nav4">BLOG</label></li>
-                <li><input type="radio" name="nav" id="nav5"><label for="nav5">CONTACT</label></li>
-            </ul>
-        </nav>
-
-        
-        <header>
-            <h1>MOBILE<span class="T">T</span></h1>
-
-            <nav class="navPer" id="Computer">
-                <ul>
-                    <li><input type="radio" class="navComp" name="navComp" id="navComp1" checked><label
-                            for="navComp1">ABOUT</label></li>
-                    <li><input type="radio" class="navComp" name="navComp" id="navComp2"><label for="navComp2">OUR
-                            APPS</label></li>
-                    <li><input type="radio" class="navComp" name="navComp" id="navComp3"><label
-                            for="navComp3">CAREERS</label></li>
-                    <li><input type="radio" class="navComp" name="navComp" id="navComp4"><label
-                            for="navComp4">BLOG</label></li>
-                    <li><input type="radio" class="navComp" name="navComp" id="navComp5"><label
-                            for="navComp5">CONTACT</label></li>
+    <header class="container">
+        <nav class="container navbar navbar-expand-lg navbar-light justify-content-between fixed-top">
+            <a class="navbar-brand" href="#">MobileT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">OUR APPS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CAREERS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
                 </ul>
-            </nav>
-        </header>
-
-        <div class="contPrin">
-            <h1>Join our team</h1>
-            <h2>Work and be yourself</h2>
-            <div>
-                <a href="#">Open Positions</a>
-                <img class="openPos" src="https://cdn-icons-png.flaticon.com/512/9291/9291615.png" alt="flaticon">
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <section id="career">
-
-        <div class="textPic">
-
-            <div class="carText">
-
-                <h1>Careers at <span class="MOBILET">MobileT</span></h1>
-                <br>
-                <hr class="hr"><br>
-                <p>Mobile careers are becoming increasingly popular in the tech industry. With the rapid growth of
-                    mobile devices, there is a high demand for professionals with skills in mobile development, design,
-                    and marketing. The mobile industry offers a range of career opportunities, including mobile app
-                    development, user experience design, mobile marketing, and mobile analytics. As more and more
-                    businesses seek to optimize their mobile presence, the demand for mobile professionals is expected
-                    to continue to grow.</p>
-
+    <main>
+        <section id="inicio" class="contPrin text-white">
+            <h1 class="display-3">Join our team</h1>
+            <h2 class="h4">Work and be yourself</h2>
+            <div class="d-flex align-items-center justify-content-center bg-gradient rounded-pill py-1 mt-5 shadow">
+                <a href="#" class="text-white">Open Positions</a>
+                <img class="openPos ml-3" src="assets/img/iconPen.png" alt="icone de caneta">
             </div>
+        </section>
 
-            <img src="CoffeeDoddle.png" alt="">
-
-        </div>
-
-        <h1 class="Benefits">Benefits</h1>
-
-        <div class="carBen">
-
-            <div>
-                <div>
-                    <img src="https://cdn-icons-png.flaticon.com/512/2400/2400513.png" alt="flaticon">
-                    <h3>Culture of Innovation</h3>
-                    <p>Mobile technology allows users to access information, applications and services from anywhere and
-                        anytime, as long as they have a mobile device and an internet connection.</p>
+        <section id="career" class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row textPic">
+                    <div class="col-md-6 carText">
+                        <h1>Careers at <span class="MOBILET">MobileT</span></h1>
+                        <hr class="hr">
+                        <br>
+                        <p>Mobile careers are becoming increasingly popular in the tech industry. With the rapid growth
+                            of mobile
+                            devices, there is a high demand for professionals with skills in mobile development, design,
+                            and
+                            marketing. The mobile industry offers a range of career opportunities, including mobile app
+                            development, user experience design, mobile marketing, and mobile analytics. As more and
+                            more
+                            businesses seek to optimize their mobile presence, the demand for mobile professionals is
+                            expected
+                            to continue to grow.</p>
+                    </div>
+                    <img class="col-md-6" src="assets/img/CoffeeDoddle.png" alt="">
                 </div>
-                <div>
-                    <img src="https://cdn-icons-png.flaticon.com/512/3063/3063783.png" alt="flaticon">
-                    <h3>Flexibility</h3>
-                    <p>Because mobile apps and services are designed to work on mobile devices, many mobile technology
-                        companies allow their employees to work remotely or on flexible schedules.</p>
+
+                <h1 class="Benefits mt-5">Benefits</h1>
+
+                <div class="row carBen">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <img src="assets/img/innovationCulture.png" alt="innovationCulture">
+                            <h3 class="mt-3">Culture of Innovation</h3>
+                            <p>Mobile technology allows users to access information, applications, and services from
+                                anywhere and
+                                anytime, as long as they have a mobile device and an internet connection.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <img src="assets/img/flexibility.png" alt="flexibility">
+                            <h3 class="mt-3">Flexibility</h3>
+                            <p>Because mobile apps and services are designed to work on mobile devices, many mobile
+                                technology
+                                companies allow their employees to work remotely or on flexible schedules.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <img src="assets/img/group.png" alt="group">
+                            <h3 class="mt-3">Stimulating Work Environment</h3>
+                            <p>Mobile apps and services are specifically designed to work on mobile devices, which means
+                                they generally
+                                offer a more intuitive and mobile-friendly user experience than desktop solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <img src="assets/img/benefits.png" alt="benefits">
+                            <h3 class="mt-3">Competitive Salaries and Benefits</h3>
+                            <p>The mobile technology industry is very competitive, and companies often offer very
+                                attractive salaries
+                                and benefits to attract and retain the best talent.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div>
-                <div>
-                    <img src="https://cdn-icons-png.flaticon.com/512/3957/3957421.png" alt="flaticon">
-                    <h3>Stimulating work Environment</h3>
-                    <p>Mobile apps and services are specifically designed to work on mobile devices, which means they
-                        generally offer a more intuitive and mobile-friendly user experience than desktop solutions.</p>
-                </div>
-                <div>
-                    <img src="https://cdn-icons-png.flaticon.com/512/4115/4115705.png" alt="flaticon">
-                    <h3>Competitive Salaries and Benefits</h3>
-                    <p>The mobile technology industry is very competitive and companies often offer very attractive
-                        salaries and benefits to attract and retain the best talent.</p>
-                </div>
+        <section id="possib" class="bg-dark text-light py-5">
+            <div class="container">
+                <h2 class="">My Possibilities</h2>
+                <h5 class="">Work wherever you want, be who you want to be</h5>
+
+                <ul class="row">
+                    <li class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <input type="radio" name="poss" id="poss1" checked>
+                        <label for="poss1" onclick="openTab('poss1')" class="d-flex justify-content-center align-items-center text-light">Project
+                            Manager</label>
+                    </li>
+                    <li class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <input type="radio" name="poss" id="poss2">
+                        <label for="poss2" onclick="openTab('poss2')" class="d-flex justify-content-center align-items-center text-light">Front-end
+                            Developer</label>
+                    </li>
+                    <li class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <input type="radio" name="poss" id="poss3">
+                        <label for="poss3" onclick="openTab('poss3')" class="d-flex justify-content-center align-items-center text-light">iOS
+                            Developer</label>
+                    </li>
+                    <li class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <input type="radio" name="poss" id="poss4">
+                        <label for="poss4" onclick="openTab('poss4')" class="d-flex justify-content-center align-items-center text-light">Android
+                            Developer</label>
+                    </li>
+                </ul>
+
+                <ul class="d-flex justify-content-center flex-wrap">
+                    <li class="contPossib poss1">
+                        <div class="container p-4 text-dark">
+                            <hr>
+                            <h1>Project Manager</h1>
+                            <p>The area of project management involves leading teams and projects, setting goals,
+                                monitoring
+                                progress, and ensuring that the project is completed successfully and within the
+                                established time
+                                and budget.<br><br>
+                                Some common project management tools include<br><br>
+                                Microsoft Project | Trello | Asana</p>
+                        </div>
+                    </li>
+                    <li class="contPossib poss2">
+                        <div class="container p-4 text-dark">
+                            <hr>
+                            <h1>Front-end Developer</h1>
+                            <p>Responsible for creating and designing the user interface of a website or application.
+                                They work
+                                with programming languages like HTML, CSS, and JavaScript to create responsive and
+                                compelling
+                                interfaces for users.<br><br>
+                                Some common project management tools include<br><br>
+                                VS Code | Sublime Text | Atom</p>
+                        </div>
+                    </li>
+                    <li class="contPossib poss3">
+                        <div class="container p-4 text-dark">
+                            <hr>
+                            <h1>iOS Developer</h1>
+                            <p>Create mobile apps for Apple devices, including iPhones, iPads, and iPod Touches. They
+                                work with
+                                programming languages like Swift and Objective-C to create applications that are
+                                functional,
+                                attractive, and easy to use.<br><br>
+                                Some common project management tools include<br><br>
+                                Xcode | AppCode | TestFlight</p>
+                        </div>
+                    </li>
+                    <li class="contPossib poss4">
+                        <div class="container p-4 text-dark">
+                            <hr>
+                            <h1>Android Developer</h1>
+                            <p>Android developers create mobile apps for Android devices, which include smartphones,
+                                tablets, and
+                                smartwatches. They work with programming languages like Java and Kotlin to create
+                                applications
+                                that are functional and attractive to users.<br><br>
+                                Some common project management tools include<br><br>
+                                Android Studio | IntelliJ IDEA | Android Debug Bridge</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-
-        </div>
-
-    </section>
-
-    <section id="possib">
-        <h1>My Possibilits</h1>
-        <h5>Work wherever you want, be who you want to be</h5>
-
-            <ul>
-                <li>
-                    <input type="radio" name="poss," id="poss1" checked>
-                    <label for="poss1">Project manager</label>
-                    <div class="container">
-                        <hr>
-                        <h1>Project Manager</h1>
-                        <p>The area of project management involves leading teams and projects, setting goals, monitoring
-                            progress, and ensuring that the project is completed successfully and within the established
-                            time and budget.<br><br>
-                            Some common project management tools include<br><br>
-                            Microsoft Project | Trello | Asana</p>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="poss," id="poss2">
-                    <label for="poss2">front-end Developer</label>
-                    <div class="container">
-                        <hr>
-                        <h1>front-end Developer</h1>
-                        <p>Responsible for creating and designing the user interface of a
-                            website or application. They work with programming languages like HTML, CSS, and JavaScript
-                            to create responsive and compelling interfaces for users.<br><br>
-                            Some common project management tools include<br><br>
-                            VS Code | Sublime Text | Atom</p>
-                    </div>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="poss," id="poss3">
-                    <label for="poss3">iOS Developer</label>
-                    <div class="container">
-                        <hr>
-                        <h1>iOS Developer</h1>
-                        <p>Create mobile apps for Apple devices, including iPhones, iPads, and iPod Touches. They work
-                            with programming languages like Swift and Objective-C to create applications that are
-                            functional, attractive, and easy to use.<br><br>
-                            Some common project management tools include<br><br>
-                            Scode | AppCode | TestFlight</p>
-                    </div>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="poss," id="poss4">
-                    <label for="poss4">Android Developer</label>
-                    <div class="container">
-                        <hr>
-                        <h1>Android Developer</h1>
-                        <p>Android developers create mobile apps for Android devices, which include smartphones,
-                            tablets,
-                            and smartwatches. They work with programming languages like Java and Kotlin to create
-                            applications that are functional and attractive to users.<br><br>
-                            Some common project management tools include<br><br>
-                            Android Studio | IntelliJ IDEA | Android Debug Bridge</p>
-                    </div>
-                    </div>
-                </li>
-            </ul>
-
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-section">
-        <h3>Redes Sociais</h3>
-        <ul>
-            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-        </ul>
-        </div>
-        
-        <div class="footer-section">
-        <h3>Contato</h3>
-        <ul>
-            <li><a href="mailto:contato@exemplo.com"><i class="fas fa-envelope"></i> contato@exemplo.com</a></li>
-            <li><a href="#"><i class="fas fa-phone"></i> (11) 1234-5678</a></li>
-            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - São Paulo, SP</a></li>
-        </ul>
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+            </ul>
         </div>
 
         <div class="footer-section">
-        <h3>Serviços</h3>
-        <ul>
-            <li><a href="#">Desenvolvimento Web</a></li>
-            <li><a href="#">Design Gráfico</a></li>
-            <li><a href="#">Marketing Digital</a></li>
-            <li><a href="#">Consultoria em TI</a></li>
-        </ul>
+            <h3>Contato</h3>
+            <ul>
+                <li><a href="mailto:contato@exemplo.com"><i class="fas fa-envelope"></i> contato@exemplo.com</a></li>
+                <li><a href="#"><i class="fas fa-phone"></i> (11) 1234-5678</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - São Paulo, SP</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Serviços</h3>
+            <ul>
+                <li><a href="#">Desenvolvimento Web</a></li>
+                <li><a href="#">Design Gráfico</a></li>
+                <li><a href="#">Marketing Digital</a></li>
+                <li><a href="#">Consultoria em TI</a></li>
+            </ul>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 

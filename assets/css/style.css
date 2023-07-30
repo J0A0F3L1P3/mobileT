@@ -1,0 +1,309 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	user-select: none;
+	font-family: Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+input {
+	display: none;
+}
+
+/* header */
+
+header nav {
+	background: rgba(333, 333, 333, 0.5);
+}
+
+/* seção "inicio" */
+
+#inicio {
+	height: 100vh;
+	background-color: #202125;
+	background-image: url("../img/space.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.contPrin {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contPrin h1 {
+	font-size: 50px;
+	color: #FAF9FE;
+}
+
+.contPrin h2 {
+	font-size: 25px;
+	color: #BC614C;
+}
+
+.contPrin div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to right, #D1566F 25%, #BC614C);
+	border-radius: 100px;
+	padding: 5px 20px 5px 5px;
+	margin-top: 50px;
+	box-shadow: 0px 5px 15px #0B0A10;
+}
+
+.contPrin a {
+	text-decoration: none;
+	font-size: 25px;
+	color: #FAF9FE;
+	padding: 5px 30px 5px 20px;
+}
+
+.openPos {
+	height: 25px;
+	width: 25px;
+}
+
+
+/* seção "career" */
+
+.carText h1 {
+	font-size: 40px;
+	color: #65666B;
+}
+
+.MOBILET {
+	color: #FAF9FE;
+}
+
+hr.hr {
+	background-image: linear-gradient(to right, #D1566F, #BC614C);
+	border: 0;
+	height: 3px;
+}
+
+.carText p {
+	font-size: 20px;
+	color: #65666B;
+}
+
+.textPic img {
+	height: 100%;
+}
+
+.Benefits {
+	font-size: 40px;
+	color: #FAF9FE;
+}
+
+.carBen div div h3 {
+	/* margin: 10px 0px; */
+	color: #FAF9FE;
+}
+
+.carBen div div img {
+	width: 50%;
+	border: solid #3f4044 4px;
+	background-image: linear-gradient(to top, #1C1B21 50%, #202125);
+	border-radius: 10000px;
+}
+
+.carBen div div p {
+	text-align: start;
+	min-width: 20vw;
+	font-size: 20px;
+	color: #65666B;
+}
+
+/* seção "possib" */
+
+#possib {
+	background-color: #202125;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10vh;
+	align-items: center;
+}
+
+#possib label {
+	border: solid #65666B;
+	color: #65666B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	min-width: 150px;
+	transition: .5s;
+}
+
+#possib ul {
+	margin-top: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+#possib input:checked~label {
+	background: linear-gradient(to right, #D1566F, #BC614C);
+	color: #fff;
+	border: none;
+	transition: .5s;
+	transform: scale(1.1);
+	box-shadow: 0px 10px 15px #0B0A10;
+	z-index: 999;
+}
+
+.show {
+	display: block;
+}
+
+#possib h1 {
+	font-size: 45px;
+	color: #FAF9FE;
+}
+
+#possib h5 {
+	color: #65666B;
+}
+
+.container h1 {
+	text-shadow: 3px 3px 10px black;
+	margin-bottom: 3vh;
+}
+
+.container p {
+	color: #65666B;
+}
+
+/* Fotter */
+
+footer {
+	width: 100vw;
+	background-color: #26252b;
+	color: #fff;
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer .footer-section {
+	margin: 0vh 0px 4vh 11vh;
+}
+
+footer .footer-section h3 {
+	font-size: 20px;
+	margin-top: 2vh;
+	margin-bottom: 20px;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	margin-bottom: 10px;
+}
+
+footer ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+footer ul li a:hover {
+	color: #BC614C;
+}
+
+footer ul li a i {
+	font-size: 18px;
+	/* margin-right: 10px; */
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+	#Computer {
+		display: none;
+	}
+
+	#Mobile {
+		display: block;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	.carText,
+	.textPic img {
+		width: 75vw;
+		margin: 3vh;
+	}
+
+	.textPic {
+		flex-direction: column;
+	}
+
+	.carBen div {
+		display: block;
+	}
+
+	.carBen div div img {
+		width: 30vw;
+	}
+
+	footer {
+		flex-direction: column;
+	}
+}
+
+/* celular */
+
+@media (max-width: 443px) {
+	.contPrin {
+		padding-bottom: 30vh;
+	}
+
+	#inicio {
+		margin-top: 10px;
+	}
+
+	.contPrin {
+		margin-bottom: 30vh;
+	}
+
+	.carText {
+		margin-bottom: 5vh;
+	}
+
+	.carText h1 {
+		font-size: 35px;
+	}
+
+	.navBar {
+		bottom: 130px;
+		right: 0px;
+	}
+
+	.carBen {
+		display: block;
+	}
+
+	.carBen div div img {
+		width: 30vw;
+	}
+}
